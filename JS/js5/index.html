@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Электронная таблица</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="spreadsheet-container">
+        <div class="controls-row">
+          <div class="corner-cell"></div>
+          <div id="column-headers" class="column-headers"></div>
+          <div class="add-column-btn">+</div>
+          <div class="remove-column-btn">-</div>
+        </div>
+
+        <div id="spreadsheet-body" class="spreadsheet-body"></div>
+
+        <div class="controls-column">
+          <div class="add-row-btn">+</div>
+          <div class="remove-row-btn">-</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

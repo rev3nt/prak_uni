@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.control-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 70px;
+}
+
+input {
+  width: 50px;
+  padding: 5px;
+}
+
+#color-box {
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="order-form">
+      <div>
+        <input type="text" id="name" placeholder="ФИО*" />
+        <div id="name-error" class="error"></div>
+      </div>
+
+      <div>
+        <input type="tel" id="phone" placeholder="Телефон*" />
+        <div id="phone-error" class="error"></div>
+      </div>
+
+      <div>
+        <input type="email" id="email" placeholder="Email" />
+        <div id="email-error" class="error"></div>
+      </div>
+
+      <div>
+        <textarea
+          id="comment"
+          rows="4"
+          maxlength="500"
+          placeholder="Комментарий (до 500 символов)"
+        ></textarea>
+        <div>Символов: <span id="char-count">0</span>/500</div>
+      </div>
+
+      <div>
+        <label>Выберите адрес на карте:</label>
+        <div id="map"></div>
+        <div id="map-error" class="error"></div>
+      </div>
+
+      <div class="form-footer">
+        <button type="submit">Отправить</button>
+        <div id="result" class="error"></div>
+      </div>
+    </form>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=03609665-a34d-49f2-98b1-823cb1e3cec3&lang=ru_RU"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

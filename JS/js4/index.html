@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>График загруженности процессора</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>График загруженности процессора</h1>
+
+      <div class="chart-container">
+        <canvas id="cpuChart"></canvas>
+      </div>
+
+      <div class="stats-container">
+        <div class="stat-item">
+          <span class="stat-label">Всего запросов:</span>
+          <span id="totalRequests" class="stat-value">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Ошибок:</span>
+          <span id="errorRequests" class="stat-value">0</span>
+          <span id="errorPercentage" class="stat-value">(0%)</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Последнее обновление:</span>
+          <span id="lastUpdate" class="stat-value">-</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn">Старт</button>
+        <button id="stopBtn">Стоп</button>
+        <button id="resetBtn">Сбросить</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

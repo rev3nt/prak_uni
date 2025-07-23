@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблица товаров</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="filter-container">
+        <label for="minPrice">Цена от:</label>
+        <input type="number" id="minPrice" min="0" value="0" />
+
+        <label for="maxPrice">до:</label>
+        <input type="number" id="maxPrice" min="0" value="10000" />
+
+        <button id="refreshBtn">Обновить</button>
+        <button id="resetBtn">Сбросить фильтр</button>
+      </div>
+
+      <div id="errorMessage" class="error-message"></div>
+
+      <div id="tableContainer">
+        <table id="productsTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Название</th>
+              <th>Количество</th>
+              <th>Цена за единицу</th>
+              <th>Сумма</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div id="noDataMessage" class="no-data-message">
+        Нет данных, попадающих под условие фильтра
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
