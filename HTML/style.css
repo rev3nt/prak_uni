@@ -212,97 +212,65 @@ body {
   top: 746px;
 }
 
-.two-el {
+.date-column-left {
   position: absolute;
+  top: 140px;
+  left: 487px;
+  display: flex;
+  flex-direction: column;
+  gap: 240px;
+  width: 393px;
+}
+
+.date-num-left,
+.date-num-right {
   font-family: "HelveticaNeueLTPro-Lt";
   font-size: 48px;
-  top: 100px;
-  left: 756px;
+  margin: 0 0 16px 0;
   color: #fefefe;
   font-weight: 500;
 }
 
-.two-el-text {
-  position: absolute;
+.date-num-left {
+  padding-right: 8px;
+  justify-self: end;
+}
+
+.date-num-right {
+  justify-self: start;
+}
+
+.date-disc-left,
+.date-disc-right {
   font-family: "Montserrat";
   font-size: 15px;
-  top: 214px;
-  left: 488px;
   color: #b7b7b7;
   font-weight: lighter;
   width: 391;
   word-wrap: break-word;
   white-space: normal;
+  margin: 0;
 }
 
-.two-twe {
+.date-disc-left {
+  justify-self: end;
+}
+
+.date-disc-right {
+  justify-self: start;
+}
+
+.date-column-right {
   position: absolute;
-  font-family: "HelveticaNeueLTPro-Lt";
-  font-size: 48px;
-  top: 250px;
+  top: 264px;
   left: 1036px;
-  color: #fefefe;
-  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 340px;
+  width: 393px;
+  padding-left: 74px;
 }
 
-.two-twe-text {
-  position: absolute;
-  font-family: "Montserrat";
-  font-size: 15px;
-  top: 335px;
-  left: 1035px;
-  color: #b7b7b7;
-  font-weight: lighter;
-  width: 386;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
-.two-thr {
-  position: absolute;
-  font-family: "HelveticaNeueLTPro-Lt";
-  font-size: 48px;
-  top: 506px;
-  left: 764px;
-  color: #fefefe;
-  font-weight: 500;
-}
-
-.two-thr-text {
-  position: absolute;
-  font-family: "Montserrat";
-  font-size: 15px;
-  top: 568px;
-  left: 487px;
-  color: #b7b7b7;
-  font-weight: lighter;
-  width: 393;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
-.two-fou {
-  position: absolute;
-  font-family: "HelveticaNeueLTPro-Lt";
-  font-size: 48px;
-  top: 747px;
-  left: 1036px;
-  color: #fefefe;
-  font-weight: 500;
-}
-
-.two-fou-text {
-  position: absolute;
-  font-family: "Montserrat";
-  font-size: 15px;
-  top: 809px;
-  left: 1035px;
-  color: #b7b7b7;
-  font-weight: lighter;
-  width: 393;
-  word-wrap: break-word;
-  white-space: normal;
-}
 .team {
   text-align: center;
   padding: 0;
